@@ -1,0 +1,214 @@
+@charset "utf-8";
+/*UTILITY*/
+.floatleft {
+    float: left;
+}
+.floatright {
+    float: right;
+}
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    color: white; 
+    background-color: olivedrab;
+}
+
+/*STRUCTURE*/
+header { 
+    width: 100%; 
+    height: 60px; 
+    background-color: darkolivegreen; 
+    padding: 5px 0; 
+    margin-bottom: auto; 
+}
+.container { 
+    width: 95%;  
+    background-color: darkolivegreen; 
+    margin: 5px auto; 
+}
+#logo { 
+    width: 200px; 
+    height: 100%; 
+    background-color: olive; 
+    float: left; 
+}
+nav { 
+    float: right;  
+}
+nav li { 
+    display: inline-flex; 
+    margin-right: 20px; 
+    font-weight: bold; 
+    font-size: 25px; 
+}
+nav li a { 
+    color: silver; 
+    text-decoration: none; 
+}
+nav li a:hover { 
+    color: whitesmoke; 
+    text-decoration: underline dashed; 
+    font-weight: bold; 
+}
+#carousel { 
+    width: 100%; 
+    background: url(../images/foodtruck2.png); 
+    background-size: 100% 100%; 
+    position: relative;  
+    overflow: hidden;
+}
+div#carousel > figure > img { 
+    display: none;
+    overflow: hidden;  
+}
+div#carousel > figure.visible > img { 
+    display: block; 
+    overflow: hidden; 
+    width: 40%; 
+    margin: auto auto; 
+}
+div.banner {
+    background-color: olivedrab; 
+    
+}
+div.banner h1 {
+    color: rgb(122, 172, 35); 
+    background-color: saddlebrown; 
+    font-size: 50px; 
+    text-align: center; 
+	border: solid black; 
+}
+#parent { 
+    display: flex;
+    width: 100%;
+    height: 388px;
+    background-color: olivedrab;
+    padding-top: 5%;
+}
+#parent ul li{
+    list-style: none;
+    position: relative;
+    margin-left: 0;
+}
+#parent1 {
+    display: flex;
+    width: 100%;
+    height: 388px;
+    background-color: olivedrab;
+    padding: 10% 0;
+    margin: 5px 0;
+    text-align: center;
+}
+.child { 
+    width: 40%;
+    height: 100%;
+    background-color: rgb(168, 81, 5);
+    padding: 20px 20px;
+    margin: 5px auto;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgb(0 0 0 /50%);
+    overflow: hidden;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+.child1 { 
+    width: 40%;
+    height: 100%;
+    background: saddlebrown;
+    background-image: url(../images/picnictable.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+    float: left;
+    margin: 5px auto;
+    text-align: center;
+    overflow: hidden;
+}
+.child2 .child3 {
+    width: 40%;
+    height: 100%;
+    margin: 0; 
+    background: darkgray; 
+    text-align: center; 
+    overflow: hidden;
+}
+.child4 {
+    width: 40%; 
+    height: 100%; 
+    background: saddlebrown; 
+    background-image: url(../images/grilling.jpg); 
+    background-repeat: no-repeat;
+	background-size: cover;
+    margin: 10px auto; 
+    text-align: center; 
+    overflow: hidden;
+}
+.list {
+    font-size: 16px;
+    position: relative;
+    left: -15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer { 
+    width: 100%; 
+    background-color: darkolivegreen; 
+    text-align: center; 
+    margin-top: 10%; 
+    padding: 5px 0;
+}
+.social ul {
+   display: flex;
+   justify-content: space-evenly;
+   text-align: center;
+   font-size: large;
+}
+.social li {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+    #logo {
+        display: none;
+    }
+    nav li { 
+        font-weight: bold; 
+        font-size: 15px; 
+        width: fit-content;
+    }
+    .child { 
+        width: 25%;
+        height: 75%;
+        background-color: rgb(168, 81, 5);
+        padding: 20px 40px;
+        margin: 5px 5px;
+        text-align: center;
+        font-size: 11px;
+        font-family: 'Times New Roman', Times, serif;
+        overflow: hidden;
+        box-shadow: 1px 1px 2px rgb(0 0 0 /30%);
+    }
+    .child1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;  
+    }
+    .child4 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .footer {
+        width: 100%;
+        justify-content:flex-start;
+        margin: 0 auto;
+    }
+    .social ul {
+        justify-content: space-evenly;
+        font-size: 9px;
+     }
+}
